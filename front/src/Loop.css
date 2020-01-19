@@ -1,0 +1,92 @@
+@-webkit-keyframes pulse {
+    0% { box-shadow:0 0 8px #ea4c89, inset 0 0 8px #ea4c89; }
+    50% { box-shadow:0 0 16px #ea4c89, inset 0 0 14px #ea4c89; }
+    100% { box-shadow:0 0 8px #ea4c89, inset 0 0 8px #ea4c89; }
+  }
+  
+  .inner {
+    background-color:transparent;
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+    -webkit-animation: pulse 2s linear 1s infinite;
+  }
+
+  .inner p {
+    display:block;
+    text-align: center;
+    line-height: 100px;
+    font-family:sans-serif;
+    font-weight:100;
+    font-size:24px;
+    color: #ea4c89;
+    text-shadow: 0 0 4px #ea4c89;
+  }
+
+  .progress-ring {
+stroke: white;
+filter: drop-shadow( 3px 3px 2px white);
+  }
+
+  svg {
+    overflow: visible
+  }
+
+  h1 {
+    user-select: none;
+  }
+
+  p {
+    user-select: none;
+  }
+
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  .orb_on {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 45px;
+    background-color: lightblue;
+    box-shadow:
+        0 0 1px 1px lightblue,  /* inner white */
+        0 0 5px 2px lightblue, /* middle magenta */
+        0 0 25px 15px lightblue; /* outer cyan */
+}
+
+.orb_off {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 45px;
+  background-color: rgba(173, 216, 230, 0.137);
+  box-shadow:
+      0 0 1px 1px rgba(173, 216, 230, 0.137),  /* inner white */
+      0 0 5px 2px rgba(173, 216, 230, 0.137), /* middle magenta */
+      0 0 0px 0px rgba(173, 216, 230, 0.137); /* outer cyan */
+}
+
+  .glow{
+    /* font-size: 80px; */
+    color: white;
+    /* fill: transparent; */
+    /* box-shadow: 2px 2px 2px 2px white; */
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
