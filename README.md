@@ -7,4 +7,4 @@ The footpedal could be hooked up to an arduino to talk to the react app either w
 
 This project was inspired by a desire to create a lowcost portable loop station.
 
-![Image description](https://github.com/caelan-a/TinyLoops/blob/master/tinyloops.png =250x250)
+![Image description](https://github.com/caelan-a/TinyLoops/blob/master/tinyloops.png)
